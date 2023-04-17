@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+.nav_adj{
+    position: relative;
+    z-index: 10;
+}
+.back_img1{
+    width: 100%;
+    height: 130vh;
+    background-image: url('./Images/support-center-banner-d1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.back_img2{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(214, 212, 212);
+}
+.back_img1 div h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 32%;
+    color: rgb(43, 43, 43);
+    font-size: 50px;
+}
+
+.back_img1 div p{
+    text-align: center;
+    color: rgb(49, 48, 48);
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+}
+.input_map{
+    position: relative;
+    align-items: center;
+    color: rgb(175, 174, 174);
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.fa-location-dot{
+    font-size: 25px;
+    margin-top: 3px;
+}
+.input_map input{
+    width: 650px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 12px;
+    padding-left:60px ;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px 3px rgb(36, 36, 36);
+}
+.location_sym{
+    position: absolute;
+    padding-left: 2px;
+    left: 26%;
+    top: 48.5%;
+}
+.iframe{
+    position: absolute;
+    border-radius: 20px;
+    width: 80%;
+    height: 110vh;
+}
+#map_img{
+    position: absolute;
+    top: 660px;
+    left: 10%;
+    box-shadow: 0px 0px 7px 7px rgb(134, 133, 133);
+    border-radius: 15px;
+}
+

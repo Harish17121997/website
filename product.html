@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlz8Zdyk7x0D449GLpj1chuY8KMgGXlzwa1vLKArCXWQ&usqp=CAU&ec=48665699 " rel="icon"/>
+    <link rel="stylesheet" href="./product.css"/>
+    <link rel="stylesheet" href="./nav.css"/>
+    <link rel="stylesheet" href="./footer.css"/>
+    <link rel="icon" href="">
+</head>
+<body>
+<div class="main_container">
+    <!-- Navigation Start -->
+    <nav class="nav">
+        <div class="logo"><a href="index.html"><img src="./mini project/Images/logo.png"></a></div>
+        <div class="menu">
+            <div> <a href="index.html">Home</a></div>
+            <div> <a href="product.html">Product</a></div>
+            <div> <a href="E-store.html">E-Store</a></div>
+            <div> <a href="vivo_exclusive_store.html">vivo exclusive store</a></div>
+            <div> <a href="support.html">Support</a></div>
+            <div><a href="#">Funtouch OS</a></div>
+        </div>
+        <div class="search">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><a href="loginPage.html"><i class="fa-regular fa-user"></i></a></div>
+        </div>
+    </nav>
+    <!-- title Start -->
+    <div class="title_text">
+        <h1 id="flotingtext">F</h1>    
+    </div>
+    <script>
+        let x="ind the phone that's right for you"
+        let flotingtext=document.getElementById('flotingtext')
+        let tid
+        let ti=0
+        function trans4sec(){
+            flotingtext.innerHTML+=x[ti]
+            ti++
+            if(x.length==ti){
+                clearInterval(tid)
+               
+            }
+        }
+       tid= setInterval(trans4sec,100)
+    </script>
+    <div class="m_catogory">
+        <p onclick="fun('0')">All Mobile</p>
+        <p onclick="fun('1')">X Series</p>
+        <p onclick="fun('2')">Y Series</p>
+        <p onclick="fun('3')">T Series</p>
+    </div>
+    <div class="x_series x_seri" >
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1651894597337/6f93bc96c51ed602d8cb9a677bb596d8.png"><span>X80 Pro </span><br><span>$ 1599 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1594805400665/30761a7cebd09d9041037b9fc6cc2c0f.png"><span>X50 plus </span><br><span>$ 999 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1632913171274/8e1ce7f44ff19c854d7d3f3cd1ffae76.png"><span>X70 Pro+ </span><br><span>$ 1499 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1632917111198/c1064ddaa140a3a0f944749c0fa86c0a.png"><span>X70 Pro </span><br><span>$ 1299 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1616659539144/689595a795d4c7de8b11ff8958d191b9.png"><span>X60 Pro + </span><br><span>$ 1399 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1616653877253/9cb9a0930dcdab2c9de9fb64deadaa9c.png"><span>X60 Pro </span><br><span>$ 1299 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1616657717221/339805bddadca3c710001f5c96be26d0.png"><span>X50 Pro + </span><br><span>$ 1100 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1594870103549/7ab7c25f973ee867b2cc10fb5aa847d3.png"><span>X50 Pro </span><br><span>$ 1000 /-</span></p>
+    </div>
+    <div class="x_series y_seri">
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1674897447751/92e3860c56a87da93ce6f4d5da68605d.png"><span>Y56 5G </span><br><span>$ 899 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1675665170366/03a75d13718658a42103142adc9c306c.png"><span>Y100 plus </span><br><span>$ 599 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1674010989817/e52afb17f01a8ea93f109045fdc56e4a.png"><span>Y02 Pro+ </span><br><span>$ 799 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1662350314108/be3403ec6c43eaa429f6bd489911bf5a.png"><span>Y22 Pro </span><br><span>$ 699 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1660563267114/9df1dd662d4307a4fb6ba5f3e4fb0a74.png"><span>Y35 Pro + </span><br><span>$ 999 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1649902753248/46832b83a5ebcd71db9ce2efdad9df5b.png"><span>Y01 Pro </span><br><span>$ 849 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1648633277806/342d4d9fe3df5d67519549c6856ef7a0.png"><span>Y21G Pro + </span><br><span>$ 900 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1651821110564/872054566790dd4e1d54bd7c80d3c854.png"><span>Y15s Pro </span><br><span>$ 850 /-</span></p>
+    </div>
+    <div class="x_series t_seri">
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1657765696139/ee9431e6452f96b860a10c9dc0aeaacc.png"><span>T1x 5G </span><br><span>$ 1999 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1643352961564/25afcbf86095ddd586c3dc0b1370faa4.png"><span>T1 5G </span><br><span>$ 999 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1650440283152/f3a503ac50d6ab45b27bf96f926b18c8.png"><span>T1 Pro 5G  </span><br><span>$ 849 /-</span></p>
+        <p class="x_1"><img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1650512113089/b194403687afd2212c4cf035d28d8e65.png"><span>T1 </span><br><span>$ 660 /-</span></p>
+    </div>
+    <script>
+        function fun(a)
+        {
+            let series=document.getElementsByClassName('x_series')
+            if (a==0)
+            {
+                for (i=0;i<series.length;i++)
+                {
+                    series[i].style.display='flex'
+                }
+            }
+            if (a==1){
+                series[0].style.display='flex'
+                series[1].style.display='none'
+                series[2].style.display='none'
+            }
+            if (a==2){
+                series[0].style.display='none'
+                series[1].style.display='flex'
+                series[2].style.display='none'
+            }
+            if (a==3){
+                series[0].style.display='none'
+                series[1].style.display='none'
+                series[2].style.display='flex'
+            }
+
+        }
+    </script>
+        <div class="no_more_mobile">--- No More Mobile ---</div>
+
+    <!-- footer Start -->
+    <div class="main_footer">
+        <div class="footer">
+            <div class="popular">Popular
+                <p>X80 Pro</p>
+                <p>X27 Pro</p>
+                <p>T1 Pro 5G</p>
+                <p>Y100</p>
+                <p>Y02</p>
+                <p>Y56 5G</p>
+                <p>All Mobile</p>
+                <p>Wireless Flash Charger</p>
+                <p>Vivi Exclusive Store</p>
+            </div>
+            <div class="Purchase_Online">Purchase Online
+                <p>E-store</p>
+                <p>Buy phones</p>
+                <p>Buy accessories</p>
+                <p>my orders</p>
+                <p>privacy Terms of E-store</p>
+            </div>
+            <div class="Support">Support
+                <p>FAQs</p>
+                <p>Service Center</p>
+                <p>Funtouch OS</p>
+                <p>IMEI Authentication</p>
+                <p>Query of Spare Parts Price</p>
+                <p>System Update</p>
+                <p>Write to CEO</p>
+            </div>
+            <div class="About_vivo">About vivo
+                <p>Info</p>
+                <p> India Impact Report</p>
+                <p> News centre</p>
+                <p>E-waste Management </p>
+                <p>Careers at vivo </p>
+                <p> Terms and Conditions</p>
+                <p>Investor Information </p>
+                <p>vivo Privacy Center </p>
+                <p> Sustainability</p>
+            </div>
+            <div class="contacts">Contacts
+                <p> <i class="fa-brands fa-rocketchat"></i> Chat with as</p>
+                <p> <i class="fa-solid fa-envelope"></i>  Email Us (reply in 24hr)</p>
+                <p><i class="fa-solid fa-phone"></i>  24*7
+                    <div>1800-208-3388</div> </p>
+                <p><i class="fa-solid fa-phone"></i> 24*7 
+                    <div>1800-102-3388</div>
+                </p>
+                <p><i class="fa-solid fa-phone"></i> 24*7 (only for X-series
+                    <br> customers)
+                    <div>1800-208-4488</div>
+                </p>
+                <p><i class="fa-solid fa-paper-plane"></i>  Follow us
+                <div><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i> </div></p>
+            </div>
+        </div> 
+        <a href="#buy1">hhh</a>
+        <div class="line_footer"></div>
+        <div class="footer_caption">© 2023 vivo Mobile India Pvt Ltd. All rights reserved. | Privacy Policy | Cookie Policy | Warranty Terms | Privacy Support</div>
+    </div>
+</div>
+</body>
+</html>

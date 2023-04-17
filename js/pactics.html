@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>java Script</title>
+    <style>
+
+    </style>
+</head>
+<body>
+   
+        <input width="400px" type="text" placeholder="" id="pd"/>
+        <button id="button">Add Todo</button>
+        <div id="display_todo">display</div>
+    <script>
+        let todo_arr=JSON.parse(localStorage.getItem('todo_Arrlist')) || ['todo3',`todo4 `]
+        let todo_list=document.getElementById('display_todo')
+ 
+        let btn=document.getElementById('button') 
+        btn.addEventListener("click",add_todo)
+        let todo=document.getElementById('pd')
+        let update_value
+
+ display()
+ //add todo
+ function add_todo(){
+    todo_arr.push(todo.value)
+    display()
+ }
+ //delete todo
+ function delete_todo(i){
+    todo_arr.splice(i,1)
+    display()
+ }
+ // edit todo
+ function edit_todo(i){
+    update_value=i
+    console.log(i)
+    todo.value=todo_arr[i]
+    btn.innerHTML="update Todo"
+    btn.removeEventListener('click',add_todo)
+    btn.addEventListener('click',update)
+ }
+ function update(){
+    todo_arr[update_value]=todo.value
+    btn.removeEventListener('click',update)
+    btn.addEventListener('click',add_todo)
+    btn.innerHTML='add_todo'
+    display()
+
+ }
+
+
+        function display(){       
+        todo_list.innerHTML=''
+        for(i=0;i<todo_arr.length;i++)
+        {
+            let div=document.createElement('div')
+            div.innerHTML=`${todo_arr[i]} <i onclick="edit_todo(${i})" class="fa-sharp fa-solid fa-pen"></i>
+             <i onclick="delete_todo(${i})" class="fa-solid fa-trash"></i> `
+            todo_list.append(div)
+        }
+        localStorage.setItem("todo_Arrlist",JSON.stringify(todo_arr))
+    }
+    </script>
+</body>
+</html>

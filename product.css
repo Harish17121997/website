@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+}
+/*nav bar start*/
+
+/* 1st Container start */
+.main_container{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+.title_text{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 85px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title_text h1{
+    transition: transform 4s;
+}
+.m_catogory{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin-left: 7%;
+    font-size: 25px;
+    color: grey;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.m_catogory :hover{
+    transform: scale(1.2);
+    background-color: rgb(165, 161, 161);
+    color: white;
+    box-sizing: border-box;
+}
+.x_series{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+    margin-left: 7%;
+    
+}
+.x_series p:hover{
+    transform: scale(1.05);
+}
+.x_series p{
+    width: 300px;
+    height: 420px;
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    transition: transform 2s;
+}
+.x_1 img{
+    width: 100%;
+    margin-top: 20px;
+    height: 75%;
+}
+.x_2 img{
+    width: 100%;
+    margin-top: 27px;
+    height: 67%;
+}
+.x_3 img{
+    width: 100%;
+    margin-top: 20px;
+    height: 70%;
+}
+.x_4 img{
+    width: 100%;
+    margin-top: 20px;
+    height: 70%;    
+}
+.x_5 img{
+    width: 100%;
+    margin-top: 20px;
+    height: 70%;
+}
+.x_6 img{
+    width: 100%;
+    margin-top: 25px;
+    height: 70%;
+}
+.x_7 img{
+    width: 100%;
+    margin-top: 25px;
+    height: 70%;
+}
+.x_8 img{
+    width: 100%;
+    margin-top: 25px;
+    height: 70%;
+}
+.x_1 span{
+    padding-left: 100px;
+    padding-top: 5px;
+    font-size: 25px;
+    font-stretch:ultra-expanded;
+    color: rgb(80, 79, 79);
+    box-sizing: border-box;
+}
+.no_more_mobile{
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: rgb(61, 61, 61);
+}
